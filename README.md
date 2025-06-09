@@ -1,1 +1,1 @@
-very simple practice api, seporate repo created for practice with render.com
+very simple practice api, separate repo created for practice with render.com
