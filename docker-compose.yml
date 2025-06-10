@@ -6,3 +6,12 @@ services:
       - "5000:5000"
     volumes:
       - .:/app
+    db:
+      image: postgres
+      environment:
+        - POSTGRES_PASSWORD=password
+        - POSTGRES_DB=myapp
+      volumes:
+       - postgres_data:/var/lib/postgresql/postgresql/data
+volumes:
+  postgres_data:
