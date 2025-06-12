@@ -21,7 +21,6 @@ def upgrade():
     with op.batch_alter_table('items', schema=None) as batch_op:
         batch_op.add_column(sa.Column('description', sa.String(), nullable=True))
 
-    op.execute("UPDATE invoices SET enable_downloads = False")
     # ### end Alembic commands ###
 
 
